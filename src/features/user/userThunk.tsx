@@ -27,8 +27,8 @@ export const loginUser = createAsyncThunk(
 );
 export const loginDemo = createAsyncThunk("user/login", async (_, thunkAPI) => {
   const demoData = {
-    email: import.meta.env.VITE_REACT_APP_EMAIL_DEMO as string,
-    password: import.meta.env.VITE_REACT_APP_PASSWORD_DEMO as string,
+    email: "demousertest@demo.com",
+    password: "123456789",
   } as User;
   console.log(demoData, "demoData")
   try {
