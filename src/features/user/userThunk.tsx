@@ -30,7 +30,6 @@ export const loginDemo = createAsyncThunk("user/login", async (_, thunkAPI) => {
     email: "demousertest@demo.com",
     password: "123456789",
   } as User;
-  console.log(demoData, "demoData")
   try {
     const user = await loginTester(demoData);
     return user;
